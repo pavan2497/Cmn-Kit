@@ -1,0 +1,244 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{{nav.active('contact')}}
+
+<main role="main">
+    <section class="cmn-banner">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 order-2 order-lg-1 banner-content-sec wow fadeInUp">
+                    <div class="cmn-blue-bdr">
+                        <span class="h6 d-block">CONTACT</span>
+                        <h1 class="h2 mb-0">No need to be stoic. Access world-class legal professionals to guide you
+                            through the growth ahead.</h1>
+                    </div>
+                </div>
+                <div class="col-lg-5 order-1 order-lg-2">
+                    <img class="shape-img" src="img/graphic-bluebox.svg" alt="">
+                    <div class="right-img wow fadeInUp">
+                        <svg width="350" height="321" baseProfile="full" version="1.2">
+                            <defs>
+                                <mask id="svgmask4" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse"
+                                    transform="scale(1)">
+                                    <image width="100%" height="321" xlink:href="img/image-guidance-hero_listing.png" />
+                                </mask>
+                            </defs>
+                            <image id="the-mask4" mask="url(#svgmask4)" width="100%" height="321" y="0" x="0"
+                                xlink:href="img/image-contact.png" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="container">
+            <div class="cnt-form wow fadeInUp">
+                <div class="row">
+                    <div class="col-12">
+                        <h4>Let’s connect. Send a message and we will contact you as soon as possible.</h4>
+                    </div>
+                </div>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 col-lg-5">
+                            <div class="form-group">
+                                <span class="fname">
+                                    <input type="text" class="form-control" /></span><br />
+                                <label for="Label" class="form-label">first name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="form-group">
+                                <span class="lname"><input type="text" class="form-control" /></span><br />
+                                <label for="Label" class="form-label">last name</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="form-group">
+                                <span class="email"><input type="text" class="form-control" /></span><br />
+                                <label for="Label" class="form-label">email address</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="form-group">
+                                <span class="tel"><input type="text" class="form-control" /></span><br />
+                                <label for="Label" class="form-label">phone number</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="form-group">
+                                <span class="title"><input type="text" class="form-control" /></span><br />
+                                <label for="Label" class="form-label">title</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-5">
+                            <div class="form-group">
+                                <span class="companyName"><input type="text" class="form-control" /></span><br />
+                                <label for="Label" class="form-label">company name (optional)</label>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg-10">
+                            <div class="form-group">
+                                <span class="message"><textarea class="form-control"></textarea></span><br />
+                                <label for="Label" class="form-label">message</label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-group">
+                                <input type="submit" value="REQUEST A MEETING" class="btn btn-primary" />
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <section class="contact-accordion-section">
+        <div class="container">
+            <div class="row wow fadeInUp">
+                <div class="col-12">
+                    <div class="email-address-section">
+                        <h6>EMAIL ADDRESS</h6>
+                        <h3><a href="mailto:info@growthstudio.com"
+                                class="btn btn-link big-link"><span>info@growthstudio.com</span></a></h3>
+                    </div>
+                    <div class="cmn-accordion" id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <a class="h2" href="javascript:;" data-toggle="collapse" data-target="#collapseOne"
+                                    aria-expanded="true" aria-controls="collapseOne">offices</a>
+                            </div>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                data-parent="#accordion">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="office-addresses col-sm-6 col-md-4 col-lg-3 text-16">
+                                            <h6>BRUSSELS, BELGIUM</h6>
+                                            <p>7 Rue Joseph Stevens<br />
+                                                Brussels, B - 1000<br />
+                                                Belgium<br />
+                                                Phone: + 32.2.282.4082</p>
+                                        </div>
+                                        <div class="office-addresses col-sm-6 col-md-4 col-lg-3 text-16">
+                                            <h6>DOHA, QATAR</h6>
+                                            <p>Commercial Bank Plaza,<br />
+                                                16th Floor<br />
+                                                Al Dafna Area, West Bay<br />
+                                                P.O. Box 22632<br />
+                                                Doha, Qatar </p>
+                                        </div>
+                                        <div class="office-addresses col-sm-6 col-md-4 col-lg-3 text-16">
+                                            <h6>LONDON, UK</h6>
+                                            <p>Tower 42, 25 Old Broad Street<br />
+                                                London, EC2N 1HQ<br />
+                                                United Kingdom<br />
+                                                Phone: + 44.207.413.0011 </p>
+                                        </div>
+                                        <div class="office-addresses col-sm-6 col-md-4 col-lg-3 text-16">
+                                            <h6>LOS ANGELES, CA</h6>
+                                            <p>515 South Flower St., 40th Floor<br />
+                                                Los Angeles, CA 90071<br />
+                                                Phone: +1 213.622.4750 </p>
+                                        </div>
+                                        <div class="office-addresses col-sm-6 col-md-4 col-lg-3 text-16">
+                                            <h6>NEW YORK, NY</h6>
+                                            <p>590 Madison Avenue, 20th Floor<br />
+                                                New York, NY 10022-2544<br />
+                                                Phone: +1 212.223.4000</p>
+                                        </div>
+                                        <div class="office-addresses col-sm-6 col-md-4 col-lg-3 text-16">
+                                            <h6>ORANGE COUNTY, CA</h6>
+                                            <p>3 Park Plaza, 20th Floor<br />
+                                                Irvine, CA 92614-8505<br />
+                                                Phone: +1 949.263.8400 </p>
+                                        </div>
+                                        <div class="office-addresses col-sm-6 col-md-4 col-lg-3 text-16">
+                                            <h6>SAN FRANCISCO, CA</h6>
+                                            <p>3 Embarcadero Center,<br />
+                                                26th Floor<br />
+                                                San Francisco, CA 94111<br />
+                                                Phone: +1 415.986.2800</p>
+                                        </div>
+                                        <div class="office-addresses col-sm-6 col-md-4 col-lg-3 text-16">
+                                            <h6>Shanghai, CHINA</h6>
+                                            <p>R1921 Link Square 1, 222 Hubin Road<br />
+                                                Huangpu District, Shanghai 200021<br />
+                                                China </p>
+                                        </div>
+                                        <div class="office-addresses col-sm-6 col-md-4 col-lg-3 text-16">
+                                            <h6>WASHINGTON D.C.</h6>
+                                            <p>1001 Pennsylvania Avenue NW<br />
+                                                Washington, DC 20004-2595<br />
+                                                Phone: +1 202.624.2500 </p>
+                                        </div>
+                                        <div class="office-addresses col-sm-6 col-md-4 col-lg-3 text-16">
+                                            <h6>SINGAPORE</h6>
+                                            <p>One George Street<br />
+                                                #10-01<br />
+                                                Singapore 049145<br />
+                                                Republic of Singapore </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cmn-cta">
+        <div class="container">
+            <div class="row align-items-center wow fadeInUp">
+                <div class="gred-bg col-md-11"></div>
+                <div class="col-md-6 cta-content">
+                    <div class="cta-content-wrap text-16">
+                        <h6>GET IN TOUCH</h6>
+                        <h2>See what GrowthStudio™ can do for you.</h2>
+                        <p>Experience a smart legal team that keeps pace with your vision and execution needs.
+                            GrowthStudio offers
+                            practical problem solving for founders.
+                        </p>
+                        <a href="javascript:;" class="btn btn-primary">Request a
+                            meeting</a>
+                    </div>
+                </div>
+                <div class="col-md-5 ml-auto cta-img">
+                    <div class="right-img">
+                        <svg width="445" height="399" baseProfile="full" version="1.2">
+                            <defs>
+                                <mask id="svgmask04" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse"
+                                    transform="scale(1)">
+                                    <image width="100%" height="399" xlink:href="img/Mask_footer.png" />
+                                </mask>
+                            </defs>
+                            <image id="the-mask04" mask="url(#svgmask04)" width="100%" height="399" y="0" x="0"
+                                xlink:href="img/image-CTA.png" alt="" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}
+
+{% block script %}
+<script>
+    $(function () {
+        $('.card').on('shown.bs.collapse', function (e) {
+            var $panel = $(this).closest('.card');
+            var $headerheight = $('header').outerHeight(true);
+            $('html,body').animate({
+                scrollTop: $panel.offset().top - $headerheight - 10
+            }, 500);
+        });
+    })
+
+</script>
+
+{% endblock %}

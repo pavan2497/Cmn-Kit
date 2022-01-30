@@ -1,0 +1,61 @@
+{% macro active(activePage='home') %}
+<header class="fixed-top" role="banner">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo-nav.png" alt="" />
+            </a>
+
+            <div class="right-nav">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" aria-haspopup="true"
+                    data-target="#divNavbar" aria-expanded="false" data-display="static"
+                    aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="divNavbar">
+                    <div class="menu-main-menu-container">
+                        <ul class="menu">
+                            <li class= "{%if activePage == 'guidance' %} current-menu-item {% endif %}"><a href="guidance.html">Guidance</a></li>
+                            <li class= "{%if activePage == 'resources' %} current-menu-item {% endif %}"><a href="resources.html">Resources</a></li>
+                            <li class= "{%if activePage == 'insight' %} current-menu-item {% endif %}"><a href="insight.html">Insights &#038;
+                                    News</a></li>
+                            <li class="menu-item-has-children {%if activePage == 'about' %} current-menu-item {% endif %}">
+                                <a href="about.html">About</a>
+                                <ul class="sub-menu">
+                                    <li>
+                                        <a href="about.html">About GrowthStudio™</a>
+                                    </li>
+                                    <li>
+                                        <a href="our-team.html">Our Team</a>
+                                    </li>
+                                    <li><a href="our-client.html">Our Clients</a></li>
+                                </ul>
+                            </li>
+                            <li class= "{%if activePage == 'contact' %} current-menu-item {% endif %}"><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <button type="button" id="header_search" class="btn" data-toggle="modal"
+                    data-target="#searchModal"></button>
+            </div>
+        </div>
+    </nav>
+</header>
+ <!-- Modal -->
+ <div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+ aria-hidden="true">
+ <div class="modal-dialog" role="document">
+   <div class="modal-content">
+     <div class="container modal-body">
+       <span class="close-wrap">
+         <span class="close-line close-line1"></span>
+         <span class="close-line close-line2"></span>
+       </span>
+       <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+       <form class="text-14">
+         <input type="text" placeholder="Search...">
+         <p>Hit enter to search or ESC to close</p>
+       </form>
+     </div>
+   </div>
+ </div>
+</div>
+{% endmacro %}

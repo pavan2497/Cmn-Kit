@@ -1,0 +1,206 @@
+.bio-detail-page {
+    padding-top: 60px;
+    padding-bottom: 165px;
+
+    @include media-breakpoint-down(md) {
+        padding-top: 30px;
+        padding-bottom: 50px;
+    }
+    .btn-link{
+        span {
+            letter-spacing: 1.5px;
+        }
+    }
+    .bio-img-wrap {
+        position: relative;
+        max-width: 380px;
+
+        @include media-breakpoint-down(md) {
+            margin: 0 0 40px 96px;
+        }
+
+        @include media-breakpoint-down(xs) {
+            margin: 0 30px 0 0;
+        }
+
+        .shape-img {
+            margin: 58px 0 0 -96px;
+            max-width: 445px;
+            display: inline-block;
+
+            @include media-breakpoint-down(xs) {
+                width: 100%;
+                margin: 28px 0 0 0;
+            }
+        }
+
+        .bio-img {
+            position: absolute;
+            left: 15px;
+            top: 0;
+            z-index: 1;
+            width: 254px;
+            height: 254px;
+
+            @include media-breakpoint-down(xs) {
+                left: 15px;
+                right: 15px;
+                margin: auto;
+                width: 200px;
+                height: 200px;
+            }
+
+            span {
+                position: relative;
+
+                &:after {
+                    content: "";
+                    background: $secondary-color;
+                    position: absolute;
+                    height: 19px;
+                    width: 100%;
+                    display: inline-block;
+                    bottom: -19px;
+                    top: auto;
+                    z-index: 1;
+                }
+
+                img {
+                    width: auto;
+                    display: block;
+                    max-height: 254px;
+                }
+            }
+        }
+    }
+
+    .bio-details {
+        border-bottom: 2px solid $gainsboro;
+        height: 100%;
+
+        @include media-breakpoint-down(md) {
+            padding-bottom: 20px;
+        }
+
+        .h6 {
+            margin-bottom: 12px;
+            color: $slate-grey;
+        }
+
+        h1 {
+            padding-bottom: 48px;
+            margin-bottom: 40px;
+            position: relative;
+
+            &:after {
+                position: absolute;
+                z-index: 1;
+                content: "";
+                bottom: 0px;
+                left: 0;
+                width: 32px;
+                height: 8px;
+                background-color: $primary-color;
+            }
+        }
+
+        .text-16 {
+            margin-bottom: 4px;
+        }
+    }
+
+    .bio-content {
+        padding-top: 60px;
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        h6 {
+            margin-bottom: 16px;
+            color: $slate-grey;
+        }
+
+        .inner-content {
+            padding-bottom: 50px;
+
+            strong {
+                padding-right: 10px;
+
+                @include media-breakpoint-down(xs) {
+                    display: block;
+                }
+            }
+        }
+
+        .social-block {
+            padding-bottom: 50px;
+
+            a {
+                img {
+                    margin-right: 7px;
+                    max-width: 20px;
+                }
+
+                .btn-link {
+                    @extend .text-18;
+                    text-transform: none;
+                    font-family: $font-body;
+                }
+
+                &:hover {
+                    .btn-link {
+                        &:before {
+                            width: 100%;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .contact-block {
+            padding-bottom: 50px;
+
+
+            span {
+                @include media-breakpoint-down(xs) {
+                    padding-bottom: 15px;
+                    &:last-child{
+                        padding-bottom: 0;
+                    }
+                }
+
+                strong {
+                    padding-right: 10px;
+
+                    @include media-breakpoint-down(xs) {
+                        display: block;
+                    }
+
+                }
+
+                a {
+                    text-decoration: underline;
+                }
+            }
+
+        }
+
+        .article-block {
+            ul {
+                li {
+                    margin-bottom: 16px;
+
+                    a {
+                        text-transform: none;
+                        font-family: $font-body;
+                        font-size: 18px;
+                        letter-spacing: 0;
+                        line-height: 26px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,137 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{{nav.active('about')}}
+
+<main role="main">
+    <section class="bio-detail-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 mb-4 mb-lg-0">
+                    <a href="javascript:;"
+                        class="btn btn-link"><span>BACK</span></a>
+                </div>
+                <div class="col-lg-10">
+                    <div class="row d-block d-lg-flex">
+
+                        <div class="col bio-img-wrap">
+                            <img class="shape-img"
+                                src="img/graphic-blueboxsmall.svg"
+                                alt="Background Graphic" width="445" height="240">
+                            <div class="bio-img d-flex align-items-center justify-content-center wow fadeInUp">
+                                <span>
+                                    <img src="img/image-teammember.jpg"
+                                        alt="Brayan" class="img-fluid" width="254" height="254">
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="bio-details">
+                                <span class="h6 d-block">
+                                    TEAM MEMBER
+                                </span>
+                                <h1>Madhava Jarred</h1>
+                                <span class="text-16 d-block">
+                                    <strong>
+                                        Office:
+                                    </strong>
+                                    New York, NY </span>
+                                <span class="text-16 d-block">
+                                    <strong>
+                                        I’m focused on:
+                                    </strong>
+                                    Formation, Financing, Operating </span>
+                            </div>
+                        </div>
+
+                        <div class="col-12 bio-content wow fadeInUp">
+                            <h3>Senior Formation Lawyer</h3>
+                            <div class="inner-content">
+                                <span class="text-18 d-block">
+                                    <p><strong>I love:</strong> getting C-suite companies ready for their next round of
+                                        capital.</p>
+                                </span>
+                            </div>
+                            <div class="contact-block">
+                                <h6>Contact</h6>
+                                <span class="text-18 d-block">
+                                    <strong>Phone:</strong>
+                                    <a class="text-decoration-none" href="tel:+1 212.223.4000">
+                                        +1 212.223.4000 </a>
+                                </span>
+                                <span class="text-18 d-block">
+                                    <strong>Email Address:</strong>
+                                    <a class="text-decoration-none" href="mailto:jakebarton@growthstudio.com">
+                                        jakebarton@growthstudio.com </a>
+                                </span>
+                                <span class="text-18 d-block">
+                                    <strong>Address:</strong>
+                                    590 Madison Avenue, 20th Floor, New York, NY 10022-2544 </span>
+                            </div>
+                            <div class="article-block">
+                                <h6>ARTICLES</h6>
+                                <ul class="m-0 p-0 list-unstyled">
+                                    <li>
+                                        <a href="javascript:;" class="btn btn-link big-link">
+                                            <span>
+                                                Filium morte multavit si sine </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="btn btn-link big-link">
+                                            <span>
+                                                Alii autem quibus ego cum a sapiente delectus </span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:;" class="btn btn-link big-link">
+                                            <span>
+                                                Tum dicere exorsus est eligendi </span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="cmn-cta">
+        <div class="container">
+            <div class="row align-items-center wow fadeInUp">
+                <div class="gred-bg col-md-11"></div>
+                <div class="col-md-6 cta-content">
+                    <div class="cta-content-wrap text-16">
+                        <h6>GET IN TOUCH</h6>
+                        <h2>See what GrowthStudio™ can do for you.</h2>
+                        <p>Experience a smart legal team that keeps pace with your vision and execution needs.
+                            GrowthStudio offers
+                            practical problem solving for founders.
+                        </p>
+                        <a href="javascript:;" class="btn btn-primary">Request a
+                            meeting</a>
+                    </div>
+                </div>
+                <div class="col-md-5 ml-auto cta-img">
+                    <div class="right-img">
+                        <svg width="445" height="399" baseProfile="full" version="1.2">
+                            <defs>
+                                <mask id="svgmask04" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse"
+                                    transform="scale(1)">
+                                    <image width="100%" height="399" xlink:href="img/Mask_footer.png" />
+                                </mask>
+                            </defs>
+                            <image id="the-mask04" mask="url(#svgmask04)" width="100%" height="399" y="0" x="0"
+                                xlink:href="img/image-CTA.png" alt="" />
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+{% endblock %}

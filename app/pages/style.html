@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{{nav.active('style')}}
+
+<main role="main">
+    <section>
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <button class="btn btn-primary">Primary static</button><br /><br />
+              <button class="btn btn-secondary">SECONDARY STATIC</button><br /><br />
+              <a href="javascript:;" class="btn btn-link big-link"><span>Big Link Static</span></a><br /><br />
+              <a href="javascript:;" class="btn btn-link"><span>SMALL LINK STATIC</span> </a><br /><br />
+              <br /><br />
+              <h1>Large Display h1</h1>
+              <h2>Large Headline h2</h2>
+              <h3>Small Headline h3</h3>
+              <h4>Lead Copy h4</h4>
+              <h5>Subheading h5</h5>
+              <h6>Caption h6</h6>
+              <br /><br />
+              <p>In just a few weeks, the novel coronavirus' spread has had an extraordinary impact on the lives of millions of people around the world. The pandemic has hit home for several of us, including those in the legal profession. For many attorneys, the world of work had shifted from the four walls of our office to the remote space of our living rooms. </p>
+              <p class="text-18"><b>Text 18</b> In just a few weeks, the novel coronavirus' spread has had an extraordinary impact on the lives of millions of people around the world. The pandemic has hit home for several of us, including those in the legal profession. For many attorneys, the world of work had shifted from the four walls of our office to the remote space of our living rooms. </p>
+              <p class="text-16">
+                <b>Text 16 </b>In just a few weeks, the novel coronavirus' spread has had an extraordinary impact on the lives of millions of people around the world. The pandemic has hit home for several of us, including those in the legal profession. For many attorneys, the world of work had shifted from the four walls of our office to the remote space of our living rooms.
+              </p>
+              <p class="text-14">
+                <b>Text 14 </b>In just a few weeks, the novel coronavirus' spread has had an extraordinary impact on the lives of millions of people around the world. The pandemic has hit home for several of us, including those in the legal profession. For many attorneys, the world of work had shifted from the four walls of our office to the remote space of our living rooms.
+              </p>
+              <br /><br />
+              <div class="form-group" style="width: 350px;">
+                <input type="text" class="form-control" placeholder="Placeholder">
+              </div>
+              <br />
+              <h4>With Label</h4>
+              <div class="form-group" style="width: 350px;">
+                <input type="text" class="form-control" placeholder="Placeholder" id="Label">
+                <label for="Label" class="form-label">Label</label>
+              </div> <br>
+              <div class="cmn-select" style="width: 350px;">
+                <select id="select2drop">
+                  <option value=""></option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                  <option>Option 1</option>
+                  <option>Option 2</option>
+                  <option>Option 3</option>
+                  <option>Option 4</option>
+                  <option>Option 5</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="row my-5">
+            <div class="col-md-6">
+              <ul>
+                <li>#Parent Item </li>
+                <li>#Parent Item
+                  <ul>
+                    <li>#Sub Item </li>
+                    <li>#Sub Item </li>
+                    <li>#Sub Item </li>
+                  </ul>
+                </li>
+                <li>#Parent Item
+                  <ol>
+                    <li>#Sub Item </li>
+                    <li>#Sub Item </li>
+                    <li>#Sub Item </li>
+                  </ol>
+                </li>
+                <li>#Parent Item </li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ol>
+                <li>#Parent Item </li>
+                <li>#Parent Item
+                  <ol>
+                    <li>#Sub Item </li>
+                    <li>#Sub Item </li>
+                    <li>#Sub Item </li>
+                  </ol>
+                </li>
+                <li>#Parent Item
+                  <ul>
+                    <li>#Sub Item </li>
+                    <li>#Sub Item </li>
+                    <li>#Sub Item </li>
+                  </ul>
+                </li>
+                <li>#Parent Item </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </section>
+</main>
+
+{% endblock %}

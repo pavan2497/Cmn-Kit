@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{{nav.active('home')}}
+
+<main role="main">
+  <section>
+    <div class="container">
+      <h1>Sitemap</h1>
+
+      <ul class="page-links">
+        {% for sm in sitemap %}
+        <li><a target="_blank" href="{{ sm.url }}">{{sm.name}}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+</main>
+
+{% endblock %}

@@ -1,0 +1,93 @@
+.about-sec{
+    padding: 62px 0 128px;
+    @include media-breakpoint-down(md){
+        padding-bottom: 60px;
+        padding-top: 50px;
+    }
+    @include media-breakpoint-down(sm){
+        padding-bottom: 50px;
+        padding-top: 15px;
+    }
+    svg{
+        width: 100%;
+        height: auto;
+        image{
+            width: 100%;
+            height: auto;
+        }
+        // @include media-breakpoint-down(lg){
+        //     height: 265px;
+        //     width: 289px;
+        // }
+        // @include media-breakpoint-down(lg){
+        //     image{
+        //         height: 265px; 
+        //         width: 289px;
+        //     }
+        // }
+        // @include media-breakpoint-down(md){
+        //     height: 192px;
+        //     width: 210px;
+        // }
+        // @include media-breakpoint-down(md){
+        //     image{
+        //         height: 192px; 
+        //         width: 210px;
+        //     }
+        // }
+    }
+    .about-sec-wrap{
+        padding: 80px 0;
+        @include media-breakpoint-down(md){
+            padding: 60px 0;
+        }
+        @include media-breakpoint-down(sm){
+            padding: 50px 0;
+        }
+        .btn-primary{
+            min-width: 175px;
+            margin-top: 7px;
+        }
+        position: relative;
+        > div{
+            @include media-breakpoint-down(sm){
+                margin-bottom: 35px;
+            }
+            &:nth-child(2){
+                @include media-breakpoint-down(sm){
+                    margin-bottom: 0px;
+                } 
+            }
+        }
+        p{
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+        &:first-child{
+            padding-top: 0;
+        }
+        &:last-child{
+            padding-bottom: 0;
+            &::after{
+                content: normal;
+            }
+        }
+        &:after{
+            position: absolute;
+            content: "";
+            width: calc(100% - 30px);
+            left: 15px;
+            bottom: 0;
+            height: 1px;
+            background-color: $gainsboro;
+        }
+    }
+    .about-head{
+        h6{
+            margin-bottom: 0;
+            color: $slate-grey;
+        }
+        
+    }
+}

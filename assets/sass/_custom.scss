@@ -1,0 +1,133 @@
+// Font Family
+$font-body: 'Inter', sans-serif;
+$font-body-bold: 'Inter Bold', sans-serif;
+$font-body-medium: 'Inter Medium', sans-serif;
+$font-body-semi: 'Inter Semi', sans-serif;
+
+// Fluid Fonts
+$min_width: 350px;
+$max_width: 1200px;
+$min_font: 18px;
+$max_font: 18px;
+@mixin body-font {
+  font-family: $font-body;
+  font-weight: 400;
+  line-height: 1.55;
+  font-size: 18px;
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+// Font-size as h1-h6 headings
+//h1
+@mixin font-xl {
+  font-family: $font-body-medium;
+  font-weight: normal;
+  line-height: 1.14;
+  margin-bottom: 40px;
+  letter-spacing: -1px;
+  @include fluid-type($min_width, $max_width, 36px, 56px);
+  @include media-breakpoint-down(sm) {
+    letter-spacing: -0.64px;
+    line-height: 1.22;
+    margin-bottom: 30px;
+  }
+}
+
+//h2
+@mixin font-lg { 
+  font-family: $font-body-medium;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  letter-spacing: -0.5px;
+  @include fluid-type($min_width, $max_width, 30px, 40px);
+  @include media-breakpoint-down(sm) {
+    line-height: 1.266;
+    letter-spacing: -0.38px;
+    margin-bottom: 25px;
+  }
+}
+
+//h3
+@mixin font-md {
+  font-family: $font-body-medium;
+  font-weight: normal;
+  line-height: 1.41;
+  margin-bottom: 20px;
+  letter-spacing: -0.1px;
+  @include fluid-type($min_width, $max_width, 21px, 24px);
+  @include media-breakpoint-down(sm) {
+    line-height: 1.47;
+  }
+}
+
+//h4
+@mixin font-sm {
+  font-family: $font-body-medium;
+  font-weight: normal;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  letter-spacing: normal;
+  @include fluid-type($min_width, $max_width, 18px, 20px);
+}
+
+//h5
+@mixin font-xs {
+  font-family: $font-body-bold;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  margin-bottom: 22px;
+}
+
+//h6
+@mixin font-xxs {
+  font-family: $font-body-semi;
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  line-height: 20px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+@mixin text-18 {
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 28px;
+}
+
+@mixin text-16 {
+  font-size: 16px;
+  font-weight: normal;
+  letter-spacing: 0.09px;
+  line-height: 24px;
+}
+
+@mixin text-14 {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: normal;
+  line-height: 20px;
+}
+
+// Other Mixing
+@mixin border-radius($radius) { -webkit-border-radius: $radius; -moz-border-radius: $radius; -o-border-radius: $radius;	border-radius: $radius; }
+
+@mixin opacity($opacity) { -webkit-opacity:$opacity; -moz-opacity:$opacity; -o-opacity:$opacity; -m-opacity:$opacity; opacity:$opacity; }
+
+@mixin transition($seconds) { -webkit-transition: all $seconds ease; -moz-transition: all $seconds ease; -ms-transition: all $seconds ease; -o-transition: all $seconds ease; transition: all $seconds ease; }
+
+@mixin trans-anim-none { -webkit-transition:none; -moz-transition:none; -o-transition:none; transition:none; }
+
+@mixin space-none { margin:0; padding:0; }
+
+@mixin app-none { -webkit-appearance: none; -moz-appearance: none; -o-appearance: none; -ms-appearance: none; appearance: none;}
+
+@mixin point-none { -webkit-pointer-events:none; -moz-pointer-events:none; -o-pointer-events:none; -ms-pointer-events:none; pointer-events:none; }
+
+// Background properties
+@mixin bg-cmn { background-position:top center; background-repeat:no-repeat; background-size: cover; }
+@mixin bg-parallax { background-attachment:fixed; @include bg-cmn; }

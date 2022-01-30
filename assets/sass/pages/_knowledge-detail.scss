@@ -1,0 +1,37 @@
+.knowledge-detail{
+    padding: 60px 0 100px;
+    @include media-breakpoint-down(lg){
+        padding-bottom: 0px;
+    }
+    @include media-breakpoint-down(sm){
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    .cmn-blue-bdr{
+        margin-bottom: 40px;
+        h1{
+            margin-bottom: 0;
+        }
+        .h6{
+            color: $slate-grey;
+            margin-bottom: 12px;
+            display: inline-block;
+        }
+    }
+    .pg-disc{
+        color: $slate-grey;
+        margin-bottom: 60px;
+        span{
+            display: block;
+        }
+    }
+    img{
+        margin-bottom: 60px;
+        width: 100%;
+        height: auto;
+    }
+    h5{
+        margin-bottom: 36px;
+    }
+
+}

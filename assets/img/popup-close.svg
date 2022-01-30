@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>popup-close</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="popup-close" transform="translate(-1018.000000, -94.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <g transform="translate(1018.000000, 94.000000)" id="Icon">
+                <polygon points="8 6.6086957 14.6086957 0 16 1.39130435 9.3913043 8 16 14.6086957 14.6086957 16 8 9.3913043 1.39130435 16 0 14.6086957 6.6086957 8 0 1.39130435 1.39130435 0"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

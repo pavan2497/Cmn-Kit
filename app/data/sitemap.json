@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Style Guide",
+    "url": "style.html"
+  },
+  {
+    "name": "Home",
+    "url": "index.html"
+  },
+  {
+    "name": "Guidance",
+    "url": "guidance.html"
+  },
+  {
+    "name": "Guidance detail",
+    "url": "guidance-detail.html"
+  },
+  {
+    "name": "Resources",
+    "url": "resources.html"
+  },
+  {
+    "name": "Knowledge Detail",
+    "url": "knowledge-detail.html"
+  },
+  {
+    "name": "Insights",
+    "url": "insight.html"
+  },
+  {
+    "name": "Insights Detail",
+    "url": "insight-research-detail.html"
+  },
+  {
+    "name": "Event Detail",
+    "url": "event-detail.html"
+  },
+  {
+    "name": "Case Study Detail",
+    "url": "case-study-detail.html"
+  },
+  {
+    "name": "About",
+    "url": "about.html"
+  },
+  {
+    "name": "Our Team",
+    "url": "our-team.html"
+  },
+  {
+    "name": "Bio Detail",
+    "url": "bio-detail.html"
+  },
+  {
+    "name": "Our Client",
+    "url": "our-client.html"
+  },
+  {
+    "name": "Contact",
+    "url": "contact.html"
+  },
+  {
+    "name": "Search Result",
+    "url": "search.html"
+  },
+  {
+    "name": "Privacy Policy",
+    "url": "privacy.html"
+  },
+  {
+    "name": "Page Not Found",
+    "url": "404.html"
+  }
+]

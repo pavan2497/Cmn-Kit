@@ -1,0 +1,84 @@
+.search-page {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    @include media-breakpoint-down(md){
+        padding-top:40px;
+        padding-bottom:50px;
+    }
+    h1{
+        position: relative;
+        padding-bottom: 48px;
+        margin-bottom: 40px;
+        &:after{
+            position: absolute;
+            z-index: 1;
+            content: "";
+            bottom: 0px;
+            left: 0;
+            width: 32px;
+            height: 8px;
+            background-color: #0081FF;
+        }
+    }
+    .media-loop {
+        position: relative;
+        margin-bottom: 40px;
+        width: 100%;
+
+        .media {
+            align-items: inherit;
+            -webkit-flex-wrap: wrap;
+            flex-wrap: wrap;
+
+            &:hover {
+                .media-body {
+                    .btn-link {
+                        &:before {
+                            width: 100%;
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        .media-body {
+            padding: 0 0 40px 0;
+            border-bottom: 2px solid #dfdfdf;
+            transition: all .3s ease;
+
+            @include media-breakpoint-down(xs) {
+                width: 100%;
+                flex: unset;
+                padding-bottom: 20px;
+            }
+
+            .h3 {
+                border: 0;
+                letter-spacing: -0.1px;
+                text-transform: inherit;
+                font-family: $font-body-medium;
+                color: $oxford-blue;
+                margin: 0;
+                padding: 3px 0;
+            }
+            .cmn-post-details {
+                color: $slate-grey;
+                padding-top: 12px;
+  
+                span {
+                  margin-right: 10px;
+                  padding-right: 10px;
+  
+                  &:first-child {
+                    border-right: 1px solid $slate-grey;
+                  }
+                }
+              }
+        }
+    }
+
+    .pagination {
+        padding-top: 20px;
+    }
+}

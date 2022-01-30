@@ -1,0 +1,45 @@
+{
+  "vendor": {
+    "sass": [
+      "./node_modules/bootstrap/scss/"
+    ],
+    "js": [
+      "./node_modules/jquery/dist/jquery.min.js",
+      "./node_modules/popper.js/dist/umd/popper.min.js",
+      "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+      "./node_modules/slick-carousel/slick/slick.min.js",
+      "./node_modules/select2/dist/js/select2.min.js",
+      "./node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"
+    ],
+    "fonts": [],
+    "img": [],
+    "css": [
+      "./node_modules/slick-carousel/slick/slick.css",
+      "./node_modules/select2/dist/css/select2.min.css",
+      "./node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css"
+    ]
+  },
+  "app": {
+    "sass": "./assets/sass/main.scss",
+    "js": [
+      "./assets/js/wow.min.js",
+      "./assets/js/web.js"
+    ],
+    "css": [
+      "./assets/css/animate.css",
+      "./assets/css/*.*"
+    ],
+    "fonts": [
+      "./assets/fonts/*.*"
+    ],
+    "img": [
+      "./assets/img/**/*"
+    ]
+  },
+  "dist": {
+    "js": "./dist/js/",
+    "css": "./dist/css/",
+    "fonts": "./dist/fonts/",
+    "img": "./dist/img/"
+  }
+}

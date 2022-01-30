@@ -1,0 +1,31 @@
+.cmn-cms{
+    padding: 90px 0 150px;
+    @include media-breakpoint-down(md){
+        padding: 70px 0;
+    }
+    @include media-breakpoint-down(sm){
+        padding: 50px 0;
+    }
+    .cmn-blue-bdr{
+        h1{
+            margin-bottom: 0;
+        }
+    }
+    .cms-content{
+        padding-top: 40px;
+    }
+}
+.cmn-blue-bdr{
+    position: relative;
+    padding-bottom: 48px;
+    &:after{
+        position: absolute;
+        z-index: 1;
+        content: "";
+        bottom: 0px;
+        left: 0;
+        width: 32px;
+        height: 8px;
+        background-color: $primary-color;
+    }
+}

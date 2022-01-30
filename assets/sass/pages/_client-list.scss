@@ -1,0 +1,50 @@
+.client-list {
+    &.team-list {
+        padding-top: 0;
+        .row{
+            > div{
+                &:last-child{
+                    .team-item{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        .team-item {
+            @include media-breakpoint-up(md){
+                margin-bottom: 60px;
+            }
+            .team-img {
+                height: 222px;
+                width: 256px;
+                background-color: rgba(0, 19, 47, 0.04);
+                @include media-breakpoint-down(sm){
+                    margin-bottom: 20px;
+                }
+                img {
+                    max-height: 222px;
+                    
+                }
+            }
+            .team-content {
+                width: calc(100% - 286px);
+                @include media-breakpoint-down(sm){
+                    width: 100%;
+                    margin-left: 0;
+                }
+                .h3{
+                    margin-bottom: 0px;
+                }
+                .text-14{
+                    margin-bottom: 4px;
+                    padding-top: 19px;
+                    &.value{
+                        margin-bottom: 0;
+                        color: $body-color;
+                        padding-top: 0;
+                    }
+                }
+            }
+        }
+    }
+}
